@@ -1,0 +1,163 @@
+
+
+
+
+
+
+
+
+
+
+#Aimg{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 40rem;
+    filter: blur(2px);
+  
+}
+
+.outer h1{
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    font-weight: 800;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.searchBox {
+    position: absolute;
+    top: 50rem;
+    left: 25rem;
+    text-align: center;
+    width: 60rem;
+    border-radius: 50px;
+    font-size: 30px;
+}
+
+.outer p {
+    position: absolute;
+    top: 58rem;
+    left:25 rem ;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.subheading1{
+    position: absolute;
+    top: 70rem;
+    left: 48rem;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(196, 234, 147);
+}
+
+.seasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 75rem;
+    left: 21rem;
+    margin: 30px;
+}
+
+.seasons button {
+    border: solid black 2px;
+    border-radius: 30px;
+    margin-right: 20px;
+    padding: 15px;
+    height: 100px;
+    width: 300px;
+    margin-left: 20px;
+    box-shadow: 3.5px 3.5px 5px rgb(155, 194, 158);
+    border-color: rgb(154, 243, 144);
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.subheading2 {
+    position: absolute;
+    top: 92rem;
+    left: 49rem;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(196, 234, 147);
+}
+
+.Kfeatures {
+    position: absolute;
+    top: 101rem;
+    left: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.Kfeatures .card{
+    border: solid black 1px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 15px;
+    height: 300px;
+    width: 300px;
+    margin-left: 20px;
+    /* box-shadow: 3.5px 3.5px 5px rgb(0, 0, 0); */
+    /* border-color: rgb(154, 243, 144); */
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.subheading3 {
+    position: absolute;
+    top: 128rem;
+    left: 40rem;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(196, 234, 147);
+}
+
+.Environmentalimpact{
+    position: absolute;
+    top: 137rem;
+    left: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.Environmentalimpact .card2 {
+    border: solid black 1px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 15px;
+    height: 150px;
+    width: 300px;
+    margin-left: 20px;
+    /* box-shadow: 3.5px 3.5px 5px rgb(155, 194, 158);
+    border-color: rgb(154, 243, 144); */
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.myfoot {
+    position: absolute;
+    top: 165rem;
+    width: 100%;
+}
+
+
+
+

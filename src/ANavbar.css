@@ -1,0 +1,34 @@
+body {
+    overflow-x: hidden;
+    
+}
+
+.outer {
+    /* color: white; */
+    /* background-color: rgb(204, 247, 175); */
+    position: absolute;
+    top: 1.5%;
+    width: 100%;
+    height: 70px;
+    padding: 3px;
+    
+}
+
+.outer h2 {
+    position: absolute;
+    left: 50px;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: serif;
+}
+
+.d1 {
+    position: absolute;
+    right: 0% ;
+    margin-right: 0%;
+    gap: 10px;
+    font-size:25px ;
+    font-weight: 500;
+    /* background-color: yellow; */
+    /* border-color: white; */
+}
