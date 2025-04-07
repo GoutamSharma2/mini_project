@@ -12,7 +12,7 @@
     width: 90%;
     border-radius: 25px;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 27px;
     text-align: center;
     border: none;
     outline: none;
@@ -24,6 +24,7 @@
 .searchBoxhome::placeholder{
     font-weight: 500;  
     color: rgba(255, 255, 255, 0.7);
+    font-size: 25px;
 }
 .SearchButtons{
     display: flex;
@@ -33,7 +34,8 @@
 }
 .SearchButtons button{
     width: 150px;
-}
+    font-size: 20px;
+} 
 .SearchBar{
     position: absolute;
     padding: 20px;
@@ -120,9 +122,82 @@
     border-color:rgb(191, 245, 134); */
 }
 
+.subheading2 {
+    position: absolute;
+    top: 60rem;
+    left: 49rem;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(196, 234, 147);
+}
+
+.Kfeatures {
+    position: absolute;
+    top: 69rem;
+    left: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 
+.Kfeatures .card{
+    border: solid black 1px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 15px;
+    height: 300px;
+    width: 300px;
+    margin-left: 20px;
+    /* box-shadow: 3.5px 3.5px 5px rgb(0, 0, 0); */
+    /* border-color: rgb(154, 243, 144); */
+    font-size: 23px;
+    font-weight: 400;
+}
 
+.subheading3 {
+    position: absolute;
+    top: 96rem;
+    left: 40rem;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(196, 234, 147);
+}
+
+.Environmentalimpact{
+    position: absolute;
+    top: 105rem;
+    left: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.Environmentalimpact .card2 {
+    border: solid black 1px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 15px;
+    height: 150px;
+    width: 300px;
+    margin-left: 20px;
+    /* box-shadow: 3.5px 3.5px 5px rgb(155, 194, 158);
+    border-color: rgb(154, 243, 144); */
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.myfoot {
+    position: absolute;
+    top: 165rem;
+    width: 100%;
+}
 
 
 

@@ -4,19 +4,19 @@ import './HNavbar.css';
 
 const HNavbar = () => {
     return(
-        <div className='outer'>
-            <h2>PestiGuide</h2>
-            <div className='d1'>
-                <p>Home</p>
-                <p>Environmental Impact</p>
-                <p>About</p>
-                <p>Contact</p>
-            </div>
-            <div className='d2'>
-                <button id='login' >Login</button>
-                <button id='signup'>SignUp</button>
-            </div>
-        </div>
+        <nav class="navbar">
+  <div class="navbar-brand">PestiGuide</div>
+  <ul class="navbar-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Environmental Impact</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="navbar-buttons">
+    <a href="#" class="btn login">Login</a>
+    <a href="#" class="btn signup">Sign Up</a>
+  </div>
+</nav>
     );
 };
 
