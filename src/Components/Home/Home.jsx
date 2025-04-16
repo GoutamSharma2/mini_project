@@ -1,16 +1,15 @@
-import HNavbar from "./HNavbar";
-import './Home.css';
-import bbgimg from './BackGroundHome.jpg';
-import img1 from './img1.jpg';
-import img3 from './img3.jpg';
-import img2 from './img2.jpg';
-import Footer from "./Footer.jsx";
-
+import HNavbar from "../Navbar/HNavbar.jsx";
+import '../Home/Home.css';
+import bbgimg from '../../assets/BackGroundHome.jpg';
+import img1 from '../../assets/img1.jpg';
+import img3 from '../../assets/img3.jpg';
+import img2 from '../../assets/img2.jpg';
+import Footer from "../../Components/Footer/Footer.jsx";
 export default function Home(){
+
     return(
         <div>
             <HNavbar/>
-
                   <div className="session">
                   <img src={bbgimg} alt="" id="backgimg" />
                   <h1> <span id="title"> Smart Pesticides Management <br /> For Better Farming </span></h1>
@@ -35,7 +34,14 @@ export default function Home(){
                     </div>
 
                   </div>
-
+                  <div>
+      <h2 id="seasonheading">Select Your Season</h2>
+      <div className="seasons">
+        <button id="seasonbutton">Kharif Season <br /><span>June-October</span></button>
+        <button id="seasonbutton">Rabi Season <br /><span>October-March</span></button>
+        <button id="seasonbutton">Zaid Season <br /><span>March-June</span></button>
+      </div>
+    </div>
                   <h2 className="subheading2">Key Features</h2>
                   <div className="Kfeatures">
                     <div className="card">
@@ -77,6 +83,7 @@ export default function Home(){
                         <p>Low Impact Level</p>
                     </div>
                   </div>
+    
                   <div className="myfoot">
             <Footer />
             </div>

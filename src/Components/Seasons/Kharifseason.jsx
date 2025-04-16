@@ -1,9 +1,9 @@
 
 import { useState } from "react";
-import './Kharif season.css';
-import kharifimg from './kharif.jpg';
-import Footer from "./Footer.jsx";
-import ANavbar from "./ANavbar.jsx";
+import '../../Components/Seasons/Kharifseason.css';
+import kharifimg from '../../assets/kharif.jpg';
+import Footer from "../Footer/Footer.jsx";
+import ANavbar from "../Navbar/ANavbar.jsx";
 
 const crops = [ 
     { name: "Rice", scientific: "Oryza sativa", duration: "120-150 days", region: "Eastern", image: "" }, 

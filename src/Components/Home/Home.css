@@ -57,8 +57,7 @@
     font-weight: 500;
 }
 .SearchInput{
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px;  
 }
 #title{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -124,8 +123,8 @@
 
 .subheading2 {
     position: absolute;
-    top: 60rem;
-    left: 49rem;
+    top: 83rem;
+    left: 52rem;
     font-size: 40px;
     font-weight: 500;
     color: rgb(0, 0, 0);
@@ -134,7 +133,7 @@
 
 .Kfeatures {
     position: absolute;
-    top: 69rem;
+    top: 92rem;
     left: 7rem;
     display: flex;
     justify-content: center;
@@ -159,7 +158,7 @@
 
 .subheading3 {
     position: absolute;
-    top: 96rem;
+    top: 120rem;
     left: 40rem;
     font-size: 40px;
     font-weight: 500;
@@ -169,7 +168,7 @@
 
 .Environmentalimpact{
     position: absolute;
-    top: 105rem;
+    top: 130rem;
     left: 23rem;
     display: flex;
     justify-content: center;
@@ -200,6 +199,37 @@
 }
 
 
+#seasonheading {
+    position: absolute;
+    top: 55rem;
+    left: 49rem;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(196, 234, 147);
+}
+.seasons {
+    display: flex;
+    position: absolute;
+    top: 63rem;
+    left: 23rem;
+    justify-content: center;
+    padding: 20px;
+    gap: 7px;
+    margin-bottom: 100px;
+    color: black;
+}
+
+#seasonbutton {
+    border: solid rgb(111, 209, 124) 2px ;
+    border-radius: 20px;
+    height: 10rem;
+    width: 20rem;
+    margin-right: 55px;
+    padding: 10px 45px;
+    color: black;
+    font-size: 20px;
+}
 
 
 

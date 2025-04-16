@@ -1,21 +1,17 @@
 import React from "react";
-// import Seasons from "./Seasons.jsx";
-// import Features from "./Features.jsx";
-// import Footer from "./Footer.jsx";
-import Login from "./Login.jsx";
-import Home from "./Home.jsx";
-import Kharif from "./Kharif season.jsx";
-import Rabi from "./Rabi season.jsx";
-import Zaid from "./Zaid season.jsx";
-
+import Login from "../src/Components/Login/Login.jsx";
+import Home from "./Components/Home/Home.jsx";
+import Kharif from "./Components//Seasons/Kharifseason.jsx";
+import Ahome from "../src/Components/Home/Ahome.jsx";
+import Pesticides from "./Components/Pesticides/Pesticides.jsx";
 function App() {
   return (
     <div>
       {/* <Login/>  */}
-      {/* <Zaid /> */}
-      <Home/>
-
- 
+      {/* <Kharif /> */}
+      {/* <Home/> */}
+      {/* <Ahome/> */}
+      <Pesticides/>
     </div>
   );
 }

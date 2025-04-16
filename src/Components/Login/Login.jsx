@@ -1,7 +1,7 @@
 import './Login.css';
 // import navimg from './navbar image.jpg';
-import Footer from './Footer';
-import ANavbar from "./ANavbar";
+import Footer from '../Footer/Footer.jsx';
+import ANavbar from "../Navbar/ANavbar.jsx";
 
 export default function Login (){
     return (
