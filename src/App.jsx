@@ -10,15 +10,16 @@ import Data from "../src/Components/Pesticides/PesticidesData.js";
 
 function App() {
   return (
-    <div>
-      {/* <Login/>  */}
-      {/* <Signup /> */}
-      {/* <Kharif /> */}
-      {/* <Home/> */}
-      <Ahome/>
-      {/* <Crop/> */}
-      {/* <Pesticides data={Data} /> */}
-    </div>
+    <Router>
+      <Routes>
+      <Route path="/auth/signin" element={<Login />} />
+      <Route path="/home" element={<Home />} />
+
+      <Route path="/season" element={<Kharif />} />
+      <Route path="/pesticides" element={<Pesticides />} />
+       
+      </Routes>
+    </Router>
   );
 }
 
