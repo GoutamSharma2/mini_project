@@ -52,7 +52,8 @@ return (
                 <button >Select</button>
                 </div> 
              </div> 
-            ))}            
+            ))}   
+                     
                 </div>
                 <div className="bottom">
                 <br /><br />

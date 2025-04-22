@@ -4,17 +4,19 @@
     margin-bottom: 100px;
     position: absolute;
     top: 100px;
+    height: 20rem;
 }
+
 #bghome {
     position: absolute;
-    height: 40rem;
+    height: 45rem;
     width: 100%;
     filter: blur(2px);
 }
 #Atitle {
     position: absolute;
     font-size: 50px;
-    top: 200px;
+    top: 70px;
     left: 270px;
     font-weight: 700;
     color: aliceblue;
@@ -25,7 +27,7 @@
     font-size: 30px;
     font-weight: 400;
     position: absolute;
-    top: 250px;
+    top: 100px;
     left: 30rem;
     color: aliceblue;
 }
@@ -34,9 +36,9 @@
     position: absolute;
     padding: 20px;
     display:block;
-    height: 150px;
+    height: 100px;
     width: 66rem;
-    top: 350px;
+    top: 200px;
     left: 300px;
     text-align: center;
     border-radius: 25px;
@@ -49,3 +51,34 @@
     margin-bottom: 15px;  
 }
 
+#seasonheading-ahome {
+    position: absolute;
+    top: 400px;
+    left: 49rem;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(196, 234, 147);
+}
+.seasons-ahome {
+    display: flex;
+    position: absolute;
+    top: 450px;
+    left: 30rem;
+    justify-content: center;
+    padding: 20px;
+    gap: 7px;
+    margin-bottom: 100px;
+    color: rgb(255, 255, 255);
+}
+
+#seasonbutton-ahome {
+    border: solid rgb(111, 209, 124) 2px ;
+    border-radius: 20px;
+    height: 100px;
+    width: 200px;
+    margin-right: 80px;
+    color: black;
+    font-size: 20px;
+    font-size: 20px;
+}

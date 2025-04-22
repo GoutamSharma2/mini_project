@@ -15,8 +15,8 @@ function App() {
       {/* <Signup /> */}
       {/* <Kharif /> */}
       {/* <Home/> */}
-      {/* <Ahome/> */}
-      <Crop/>
+      <Ahome/>
+      {/* <Crop/> */}
       {/* <Pesticides data={Data} /> */}
     </div>
   );

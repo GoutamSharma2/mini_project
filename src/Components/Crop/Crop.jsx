@@ -18,6 +18,21 @@ const data = { pests: [
     desc: "White flying insects that feed on plant sap.",  
     image: "https://example.com/whiteflies.jpg", 
 }, 
+{ 
+  title: "Tomato Hornworm", 
+  desc: "Large green caterpillars that can destroy plant foliage.", 
+  image: "https://example.com/hornworm.jpg", 
+}, 
+{ 
+  title: "Aphids", 
+  desc: "Small sap-sucking insects that cluster on stems and leaves.", 
+  image: "https://example.com/aphids.jpg", 
+}, 
+{
+  title: "Whiteflies", 
+  desc: "White flying insects that feed on plant sap.",  
+  image: "https://example.com/whiteflies.jpg", 
+}, 
 ], 
 
 };
@@ -46,11 +61,14 @@ export default function Crop() {
     <div className="section">
       <h2 className="section-title">Pest Management</h2>
       <div id="cards">
-      <div className="card-grid">
+        <div>
+        <div className="card-grid">
         {data.pests.map((item, index) => (
           <Card key={index} item={item} />
         ))}
       </div>
+        </div>
+      
       </div>
       <div id="session-button">
       <button className="button">View More</button>

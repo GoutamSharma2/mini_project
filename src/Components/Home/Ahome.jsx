@@ -14,12 +14,18 @@ export default function Ahome(){
                      <div className="ASearchInput">
                          <input type="text" className="searchBoxhome" placeholder="Search for pesticides, crops..." />
                      </div>
-                    <div className="SearchButtons">
+                    {/* <div className="SearchButtons">
                     <button>Rice</button>
                     <button>Rabi</button>
                     <button>Wheat</button>
+                    </div> */}
                     </div>
-                    </div>
+                    <h2 id="seasonheading-ahome">Select Your Season</h2>
+                   <div className="seasons-ahome">
+                   <button id="seasonbutton-ahome">Kharif Season <br /></button>
+                   <button id="seasonbutton-ahome">Rabi Season <br /></button>
+                   <button id="seasonbutton-ahome">Zaid Season <br /></button>
+                  </div>
                   </div>
 
             
