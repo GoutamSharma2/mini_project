@@ -11,7 +11,6 @@ function App() {
       {/* <Kharif /> */}
       {/* <Home/> */}
       {/* <Ahome/> */}
-      <Pesticides/>
     </div>
   );
 }
