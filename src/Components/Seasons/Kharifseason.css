@@ -11,11 +11,11 @@ body {
 }
 .searchbox{
     position: absolute;
-    height: 70px;
-    width: 450px;
-    border-radius: 2px;
-    top: 430px;
-    border-radius: 20px;
+    height: 40px;
+    width: 600px;
+    top: 270px;
+    left: 180px;
+    border-radius: 5px;
     padding: 6px 40px;
     font-size: 22px;
     box-shadow: 3.5px 3.5px 5px rgb(191, 245, 134);
@@ -27,7 +27,7 @@ body {
 .local {
     padding: 5px 7px;
     position: absolute;
-    top: 680px;
+    top: 500px;
     width: 90%; 
     display: flex;
     gap: 30px;
@@ -61,30 +61,26 @@ body {
     width: 200px;
 }
 
-#kharifimg {
-    position: absolute;
-    top: 50px;
-    left: 750px;
-    height: 350px;
-    width: 550px;
-    border-radius: 20px;
-}
-
-.above p {
-    position: absolute;
-    height: 500px;
-    width: 700px;
-    font-weight: 400;
-    font-size: 20px;
-}
-
 .above {
     position: absolute;
     top: 140px;
+    /* left: 180px; */
+    width: 100%;
+    background-color: rgb(168, 224, 99);
+    height: 230px;
+}
+
+#selectbutton {
+    border-radius: 30px;
+    margin-right: 50px;
+    position: relative;
     left: 180px;
 }
 
-
+#seasontitle {
+    position: relative;
+    left: 180px;
+}
 
 
 
