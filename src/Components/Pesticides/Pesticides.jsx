@@ -1,97 +1,91 @@
-import React from "react";
-import ANavbar from "../Navbar/ANavbar";
-import "./Pesticides.css";
+import React from "react"; 
+import "../../Components/Pesticides/Pesticides.css";
+import Footer from "../Footer/Footer.jsx";
+import ANavbar from "../Navbar/ANavbar.jsx";
 
-const data = { pests: [ 
-    { 
-    title: "Tomato Hornworm", 
-    desc: "Large green caterpillars that can destroy plant foliage.", 
-    image: "https://example.com/hornworm.jpg", 
-}, 
-{ 
-    title: "Aphids", 
-    desc: "Small sap-sucking insects that cluster on stems and leaves.", 
-    image: "https://example.com/aphids.jpg", 
-}, 
-{
-    title: "Whiteflies", 
-    desc: "White flying insects that feed on plant sap.",  
-    image: "https://example.com/whiteflies.jpg", 
-}, 
-{ 
-    title: "Spider Mites", 
-    desc: "Microscopic pests that cause yellowing and webbing.", 
-    image: "https://example.com/spidermites.jpg", 
-}, 
-], 
-
-// growth: [ 
-//     { 
-//         title: "Nitrogen Boost", 
-//         desc: "High-nitrogen fertilizer for vegetative growth.", 
-//         image: "https://example.com/nitrogen.jpg", 
-//     }, 
-//     { 
-//         title: "Root Enhancer", 
-//         desc: "Promotes strong root development and nutrient uptake.", 
-//         image: "https://example.com/rootenhancer.jpg", 
-//     }, 
-//     { 
-//         title: "Bloom Booster", 
-//         desc: "Phosphorus-rich formula for flower and fruit production.", 
-//         image: "https://example.com/bloom.jpg", 
-//     }, 
-//     { 
-//         title: "Micronutrient Mix", 
-//         desc: "Essential minerals for overall plant health.",
-//         image: "https://example.com/micronutrients.jpg", 
-//     }, 
-// ], 
-};
-
-const Card = ({ item }) => (
-
-  <div className="card">
-    <img src={item.image} alt={item.title} className="card-img" />
-    <div className="card-content">
-      <h3 className="card-title">
-        {item.icon} {item.title}
-      </h3>
-      <p className="card-desc">{item.desc}</p>
-    </div>
-  </div>
-);
-
-export default function Pesticides() {
-    return (
-        <div>
-        <ANavbar/> 
-    <div className="container"> 
-    <h1 className="main-title">Pesticides For -</h1> 
-    <p className="subtitle">Comprehensive guide for pest control and growth management</p>
-
-<div className="grid">
-    <div className="section">
-      <h2 className="section-title">Pest Management</h2>
-      <div className="card-grid">
-        {data.pests.map((item, index) => (
-          <Card key={index} item={item} />
-        ))}
-      </div>
-      <button className="button">View More Pests</button>
+const Pesticides = ({ data }) => {
+    return ( 
+    <div>
+      <ANavbar />
+    
+    <div className="div1"> 
+    <h1>{data.title}</h1> 
+    <div id="subdiv1"> 
+        <span>{data.formula}</span>
+        <span>{data.cas}</span> 
     </div>
 
-    {/* <div className="section">
-      <h2 className="section-title">Growth Production</h2>
-      <div className="card-grid">
-        {data.growth.map((item, index) => (
-          <Card key={index} item={item} />
-        ))}
+<div className="div2">
+    {data.infoCards.map((card, index) => (
+      <div className="div2card" key={index}>
+        <h4>{card.title}</h4>
+        <p>{card.content}</p>
       </div>
-      <button className="button">View More Products</button>
-    </div> */}
+    ))}
+  </div>
+
+  <div id="div3">
+    <h3>{data.safetyTitle}</h3>
+    <ul className="checklist">
+      {data.safetyPrecautions.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  </div>
+
+  <div id="div4">
+    <h3>{data.environmentalTitle}</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Impact Level</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.environmentalImpact.map((row, index) => (
+          <tr key={index}>
+            <td>{row.category}</td>
+            <td>{row.impact}</td>
+            <td>{row.notes}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <div id="div5">
+    <h3>{data.usageTitle}</h3>
+    <ul className="checklist">
+      {data.usageInstructions.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  </div>
+
+  <div id="div6">
+    <div className="advantages">
+      <h4>{data.advantagesTitle}</h4>
+      <ul className="warning">
+        {data.advantages.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+    <div className="disadvantages">
+      <h4>{data.disadvantagesTitle}</h4>
+      <ul className="safe">
+        {data.disadvantages.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
   </div>
 </div>
+< Footer/>
 </div>
 
-); }
+); };
+
+export default Pesticides;

@@ -24,11 +24,14 @@ return (
 <div className="global">
     <ANavbar />
     <div className="above">
-    <h1 >Kharif Season</h1>
+    <h1 id="seasontitle">Kharif Season</h1>
     <br />
-    <p>Kharif crops, also known as monsoon crops or autumn crops, are domesticated plants that are cultivated and harvested in India, Pakistan and Bangladesh during the Indian subcontinent's monsoon season, which lasts from June to November depending on the Monsoon rains may begin as early as May in some parts of the Indian subcontinent, and crops are generally harvested from the third week of September to October. Rice, maize, and cotton are some of the major Kharif crops in India.</p>
-    <img src={kharifimg} alt="" id="kharifimg" />
-    <br /><br /> 
+    <div className="selectseasons">
+        <button id="selectbutton">Kharif Season <br /></button>
+        <button id="selectbutton">Rabi Season <br /></button>
+        <button id="selectbutton">Zaid Season <br /></button>
+      </div>
+
     <input 
     className="searchbox"
     placeholder="Search crops..." 
