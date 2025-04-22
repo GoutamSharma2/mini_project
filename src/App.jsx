@@ -13,10 +13,10 @@ function App() {
     <div>
       {/* <Login/>  */}
       {/* <Signup /> */}
-      <Kharif />
+      {/* <Kharif /> */}
       {/* <Home/> */}
       {/* <Ahome/> */}
-      {/* <Crop/> */}
+      <Crop/>
       {/* <Pesticides data={Data} /> */}
     </div>
   );

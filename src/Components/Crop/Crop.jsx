@@ -43,7 +43,6 @@ export default function Crop() {
     <h1 className="main-title">Pesticides For -</h1> 
     <p className="subtitle">Comprehensive guide for pest control and growth management</p>
 
-<div className="grid">
     <div className="section">
       <h2 className="section-title">Pest Management</h2>
       <div id="cards">
@@ -53,10 +52,11 @@ export default function Crop() {
         ))}
       </div>
       </div>
-      <button className="button">View More Pests</button>
+      <div id="session-button">
+      <button className="button">View More</button>
+      </div>
     </div>
   </div>
-</div>
 </div>
 
 ); }
