@@ -3,7 +3,8 @@ import '../../Components/Home/Ahome.css';
 import bghome from '../../assets/Bg Home.jpg';
 import ANavbar from "../../Components/Navbar/ANavbar";
 import { useNavigate } from 'react-router-dom';
-
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 export default function Ahome() {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
@@ -11,7 +12,7 @@ export default function Ahome() {
   const [pesticides, setPesticides] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/crops')
+    axios.get('http://localhost:3000/crops')
       .then(response => setCrops(response.data))
       .catch(error => console.error("Error fetching crops:", error));
 
