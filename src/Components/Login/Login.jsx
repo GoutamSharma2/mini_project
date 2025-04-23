@@ -4,13 +4,14 @@ import Footer from '../Footer/Footer.jsx';
 import ANavbar from "../Navbar/ANavbar.jsx";
 import { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 export default function Login (){
 
    const [email, setEmail]=useState("")
    const [password,setPassword]=useState("");
    const [errorMessage, setErrorMessage] = useState("");
    const navigate = useNavigate();
+   const [searchParams] = useSearchParams();
 
    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -29,7 +30,13 @@ export default function Login (){
     const data=response.data;
     if(response.status===200){
         localStorage.setItem("token",data.token);
-        navigate("/home");
+        const redirectTo = searchParams.get('redirect');
+        if(redirectTo){
+            navigate(decodeURIComponent(redirectTo)); 
+        }else{
+            navigate("/home");
+        }
+       
     }else{
         setErrorMessage(data.message || "Login failed");
     }

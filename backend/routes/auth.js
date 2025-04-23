@@ -51,4 +51,8 @@ router.post("/signout", (req, res) => {
   res.json({ message: "Signed out (token deleted on client)" });
 });
 
+router.get('/status', authMiddleware, (req, res) => {
+  res.json({ isAuthenticated: true, userId: req.userId });
+});
+
 module.exports = router;

@@ -1,23 +1,22 @@
 import React from "react";
 import Login from "../src/Components/Login/Login.jsx";
-import Signup from "../src/Components/Signup/Signup.jsx";
-import Home from "./Components/Home/Home.jsx";
-import Kharif from "./Components//Seasons/Kharifseason.jsx";
 import Ahome from "../src/Components/Home/Ahome.jsx";
-import Crop from "./Components/Crop/Crop.jsx";
 import Pesticides from "./Components/Pesticides/Pesticides.jsx";
-import Data from "../src/Components/Pesticides/PesticidesData.js";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SeasonCrops from "./Components/Seasons/SeasonCrops.jsx";
+import PestsList from "./Components/Crop/PestsList.jsx";
+import Home from "./Components/Home/Home.jsx";
 
 function App() {
   return (
     <Router>
       <Routes>
-      <Route path="/auth/signin" element={<Login />} />
-      <Route path="/home" element={<Home />} />
-
-      <Route path="/season" element={<Kharif />} />
-      <Route path="/pesticides" element={<Pesticides />} />
-       
+        <Route path="/" element={<Ahome />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/auth/signin" element={<Login />} />
+        <Route path="/crops" element={<SeasonCrops />} />
+        <Route path="/pests" element={<PestsList />} /> 
+        <Route path="/pesticide/:id" element={<Pesticides />} />
       </Routes>
     </Router>
   );

@@ -5,11 +5,54 @@ import img1 from '../../assets/img1.jpg';
 import img3 from '../../assets/img3.jpg';
 import img2 from '../../assets/img2.jpg';
 import Footer from "../../Components/Footer/Footer.jsx";
+import Ahome from "../Home/Ahome.jsx";
+import ANavbar from "../Navbar/ANavbar.jsx";
+import { useState ,useEffect} from "react";
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 export default function Home(){
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
+  const handleSeasonSelect = (season) => {
+    console.log(`Season selected: ${season}`);
+    navigate(`/crops?season=${season}`);
+  };
+  useEffect(() => {
+    const checkAuthStatus = async () => {
+      setLoading(true);
+      try {
+        const token = localStorage.getItem('token');
+        const response = await axios.get('http://localhost:3000/auth/status',{
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+        setIsLoggedIn(response.data.isAuthenticated);
+      } catch (error) {
+        setIsLoggedIn(false);
+        console.error("Error checking auth status:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    checkAuthStatus();
+  }, []);
+  if(loading)  return <div>Loading ....</div>
+  console.log("User logged in :"+isLoggedIn);
+  
     return(
-        <div>
-            <HNavbar/>
+        <div>            
+            {isLoggedIn ? (
+              <>
+              <ANavbar/>
+              <Ahome />
+              </>
+      ) : (
+        <>
+           <HNavbar/>  
                   <div className="session">
                   <img src={bbgimg} alt="" id="backgimg" />
                   <h1> <span id="title"> Smart Pesticides Management <br /> For Better Farming </span></h1>
@@ -37,11 +80,13 @@ export default function Home(){
                   <div>
       <h2 id="seasonheading">Select Your Season</h2>
       <div className="seasons">
-        <button id="seasonbutton">Kharif Season <br /><span>June-October</span></button>
-        <button id="seasonbutton">Rabi Season <br /><span>October-March</span></button>
-        <button id="seasonbutton">Zaid Season <br /><span>March-June</span></button>
-      </div>
+        <button id="seasonbutton" onClick={() => handleSeasonSelect('Kharif')}>Kharif Season <br /><span>June-October</span></button>
+<button id="seasonbutton" onClick={() => handleSeasonSelect('Rabi')}>Rabi Season <br /><span>October-March</span></button>
+<button id="seasonbutton" onClick={() => handleSeasonSelect('Zaid')}>Zaid Season <br /><span>March-June</span></button>
+</div>
     </div>
+    </>
+      )}
                   <h2 className="subheading2">Key Features</h2>
                   <div className="Kfeatures">
                     <div className="card">
