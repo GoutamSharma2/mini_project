@@ -43,6 +43,7 @@ export default function SeasonCrops() {
             const response = await axios.get(
               `http://localhost:3000/crops?season=${selectedSeason}`
             );
+            console.log("Crops fetched:", response.data);
             setCrops(response.data);
           } catch (err) {
             setError(err);
@@ -57,7 +58,7 @@ export default function SeasonCrops() {
         } else {
           setLoading(false);
         }
-      }, [selectedSeason]);
+      }, [ location.search]);
     
       const filteredCrops = crops.filter((crop) =>
         crop.name && crop.name.toLowerCase().includes(search.toLowerCase())
