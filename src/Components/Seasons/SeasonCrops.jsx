@@ -6,9 +6,31 @@ import ANavbar from "../Navbar/ANavbar.jsx";
 import { useLocation, useNavigate } from "react-router-dom";
 import RiceImg from "../../assets/RiceImg.jpg"
 import axios from "axios";
+import maizeimg from '../../assets/maize.jpeg';
+import jowar from '../../assets/maize.jpeg';
+import soyabean from '../../assets/soybean.jpg';
+import moong from '../../assets/moong.jpeg';
+import linseed from '../../assets/linssed.jpeg';
+import mustard from '../../assets/mustard green.jpg';
+import peas from '../../assets/peas.jpeg';
+import sunflower from '../../assets/sunfower.jpg';
+import tur from '../../assets/tur.jpeg';
+import urad from '../../assets/urad.jpg';
+import wheat from '../../assets/wheat.jpeg';
 
 const cropImages = {
-  Rice: RiceImg
+  Rice: RiceImg,
+  Maize: maizeimg,
+  Jowar: jowar,
+  "Bajra/PearlMillet": linseed,
+  "Tur/Arhar/PigeonPea":tur,
+  "Moong/GreenGram": moong,
+  "Urad/BlackGram": urad,
+  Soybean: soyabean,
+  Groundnut: peas,
+  Cotton:mustard,
+  Sunflower:sunflower,
+  "Sesamum/Til": wheat
   // Add more crop images as needed
 };
 

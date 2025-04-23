@@ -2,10 +2,11 @@ import './Signup.css';
 // import navimg from './navbar image.jpg';
 import Footer from '../Footer/Footer.jsx';
 import ANavbar from "../Navbar/ANavbar.jsx";
-
 export default function Signup (){
     return (
-        <div className="outerdiv">
+        <div>
+            <div className="outerdiv">
+
             < ANavbar />
                {/* <img src={navimg} /> */}
             <div className="log">
@@ -33,6 +34,8 @@ export default function Signup (){
 
         <Footer />
         </div>
+        </div>
+        
         
        
     );

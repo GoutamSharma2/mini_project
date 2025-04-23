@@ -1,7 +1,8 @@
-
+body{
+    background-color: #bff586;
+}
 .outerdiv {
-    width: 100%;
-    height: 100%;
+    background-color: #bff586;
     
 } 
 
@@ -16,8 +17,8 @@
     padding: 20px 70px;
     top: 170px;
     left:700px;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 0 0 0 20px rgb(191, 245, 134);
+    border: 0.5px solid rgb(0, 0, 0);
+    box-shadow: 0 0 0 20px #000000;
     border-radius: 20px;
 }
 

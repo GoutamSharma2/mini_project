@@ -3,14 +3,28 @@ import ANavbar from "../Navbar/ANavbar";
 import "./PestsList.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from 'axios';
+import img1 from '../../assets/FRAME1.png';
+import img2 from '../../assets/FRAME2.png';
+import img3 from '../../assets/FRAME3.png';
 
-const Card = ({ item,onClick }) => (
+// const pestimages = [
+//   Mancozeb: img1,
+//   img2,
+//   img3
+// ];
+
+const Card = ({ item,onClick,pestimages }) => (
   <div className="card" onClick={() => onClick(item)}>
     <img 
       src={item.imageUrl || '/default-pesticide.jpg'} 
       alt={item.Name} 
       className="card-img" 
     />
+    {/* <img
+      src={pestimages[item.Name]}
+      alt={item.Name}
+      className="card-img"
+                /> */}
     <div className="card-content">
       <h3 className="card-title">{item.Name}</h3>
       <p className="card-desc">

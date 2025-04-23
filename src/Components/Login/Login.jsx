@@ -1,5 +1,6 @@
 import './Login.css';
 // import navimg from './navbar image.jpg';
+import loginimg from '../../assets/OIP.jpeg';
 import Footer from '../Footer/Footer.jsx';
 import ANavbar from "../Navbar/ANavbar.jsx";
 import { useState } from 'react';
@@ -41,13 +42,13 @@ export default function Login (){
         setErrorMessage(data.message || "Login failed");
     }
   } catch (error) {
-    console.error(err);
     setErrorMessage("Something went wrong");
   }
    }
 
     return (
-        <div className="outerdiv">
+        <div>
+  <div className="outerdiv">
             < ANavbar />
                {/* <img src={navimg} /> */}
             <div className="log">
@@ -86,6 +87,8 @@ export default function Login (){
 
         <Footer />
         </div>
+        </div>
+      
         
        
     );
