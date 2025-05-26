@@ -1,20 +1,35 @@
 import React from "react";
-
 import './ANavbar.css';
+import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 const ANavbar = () => {
-    return(
-        <nav className="Anavbar">
-        <div className="Anavbar-brand">PestiGuide</div>
-        <ul className="Anavbar-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Environmental Impact</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    );
-};
+  const navigate = useNavigate();
 
+  const handleLogout = async () => {
+    try {
+      await axios.post("http://localhost:3000/auth/signout");
+      localStorage.removeItem("token");
+      navigate("/", { state: { forceRefresh: true } });
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
+
+  return (
+    <nav className="Anavbar">
+      <button
+        className="Anavbar-brand"
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        PestiGuide
+      </button>
+      <button onClick={() => navigate("/")}>Home</button>
+      <button onClick={handleLogout}>Logout</button>
+    </nav>
+  );
+};
 
 export default ANavbar;

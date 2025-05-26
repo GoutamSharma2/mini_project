@@ -40,7 +40,7 @@ export default function Home() {
     };
 
     checkAuthStatus();
-  }, []);
+  }, [location]);
 
   const handleUnauthSearchChange = (event) => {
     setUnauthSearchTerm(event.target.value);
