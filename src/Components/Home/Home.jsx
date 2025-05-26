@@ -38,7 +38,7 @@ export default function Home() {
         setLoading(false);
       }
     };
-
+ 
     checkAuthStatus();
   }, [location]);
 

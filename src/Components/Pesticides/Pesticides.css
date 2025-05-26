@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+    background-color: rgb(173, 237, 173);
 }
 
 #subdiv1 {
@@ -23,13 +23,16 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 50px;
 }
 
 .div2card {
     border: 2px solid lightgreen;
+    /* background-color: lightgreen; */
+    transform: scale(1.2);
     border-radius: 20px;
     height: 150px;
-    width: 450px;
+    width: 430px;
     padding: 7px 5px;
     font-size: 21px;
 }
@@ -68,7 +71,7 @@
     height: 250px;
     font-size: 21px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    /* align-items: center; */
     padding: 5px 10px;
 }
